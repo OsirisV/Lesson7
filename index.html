@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Object Oriented Programming</title>
+    <script>
+        function Card(){
+            this.suit = "diamonds";
+            this.face = "1";
+            this.setSuit = function(){
+                alert(this.suit);
+            }
+           this.setFace = function(){
+                alert(this.face);
+            }
+        }
+        var myCard = new Card();
+    </script>
+</head>
+<body>
+    <input type="button" value="Card1" onclick="myCard.setSuit()" />
+    <input type="button" value="Card2" onclick="myCard.setFace()" />
+</body>
+</html>
